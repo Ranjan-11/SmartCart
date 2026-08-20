@@ -24,8 +24,8 @@ public class RouteValidator {
         String path = request.getURI().getPath();
         HttpMethod method = request.getMethod();
 
-        // Allow public GET requests to product and category browsing
-        if (method == HttpMethod.GET && (path.startsWith("/api/v1/products") || path.startsWith("/api/v1/categories"))) {
+        // Allow public GET requests to product, category, and inventory browsing
+        if (method == HttpMethod.GET && (path.startsWith("/api/v1/products") || path.startsWith("/api/v1/categories") || path.startsWith("/api/v1/inventory"))) {
             return false;
         }
 
