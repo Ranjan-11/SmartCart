@@ -31,3 +31,7 @@ buildNumber.properties
 
 .DS_Store
 Thumbs.db
+# Angular
+smartcart-frontend/node_modules/
+smartcart-frontend/dist/
+smartcart-frontend/.angular/
